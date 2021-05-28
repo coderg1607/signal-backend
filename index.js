@@ -1,5 +1,5 @@
 const express = require('express');
-const socketio=require('socket.io');
+const socketio=require('socket.io')(http,{cors:{origin:"*"});
 const http=require('http');
 const {addUser,removeUser,getUser,getUserInRoom} = require('./users.js');
 const cor=require('cors');
